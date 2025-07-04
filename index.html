@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jay Mandal| 3D Artist</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css ">
+  <script type="module" src="https://unpkg.com/ @google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body class="dark">
+  <header>
+    <h1>Jay Mandal</h1>
+    <p>3D Artist | 3D Modeler</p>
+    <button id="theme-toggle">Toggle Light/Dark</button>
+  </header>
+
+  <main class="container">
+    
+    <section id="resume">
+      <h2>Download My Resume</h2>
+      <p><a href="resume/your-resume.pdf" download class="btn">📄 Download PDF</a></p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="project-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jay Mandal</p>
+  </footer>
+
+<!-- Floating Social Icons -->
+  <div class="floating-social">
+    <a href="https://www.artstation.com/mandaljay10 " target="_blank" title="ArtStation"><i class="fab fa-artstation"></i></a>
+    <a href="https://www.linkedin.com/in/jay-mandal-a6ab981b8/ " target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+  
+  <script src="scripts.js"></script>
+  
+    <script>
+  window.addEventListener('scroll', function () {
+    const floating = document.querySelector('.floating-social');
+    if (window.scrollY > 300) {
+      floating.style.opacity = '1';
+      floating.style.pointerEvents = 'auto';
+    } else {
+      floating.style.opacity = '0';
+      floating.style.pointerEvents = 'none';
+    }
+  });
+</script>
+</body>
+</html>
