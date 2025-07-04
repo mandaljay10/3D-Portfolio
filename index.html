@@ -3,54 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jay Mandal| 3D Artist</title>
+  <title>Jay Mandal | 3D Artist</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css ">
-  <script type="module" src="https://unpkg.com/ @google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
-<body class="dark">
+<body>
+
   <header>
     <h1>Jay Mandal</h1>
-    <p>3D Artist | 3D Modeler</p>
-    <button id="theme-toggle">Toggle Light/Dark</button>
+    <p>3D Modeler | Blender Artist | Game Assets</p>
   </header>
 
-  <main class="container">
-    
-    <section id="resume">
-      <h2>Download My Resume</h2>
-      <p><a href="resume/your-resume.pdf" download class="btn">📄 Download PDF</a></p>
-    </section>
+  <section class="hero">
+    <h2>Welcome to My 3D Portfolio</h2>
+    <p>Explore my latest modeling, animation, and texturing work.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div id="project-list"></div>
-    </section>
-  </main>
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <!-- Project items will go here -->
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Jay Mandal</p>
   </footer>
 
-<!-- Floating Social Icons -->
+  <!-- Floating Social Icons -->
   <div class="floating-social">
-    <a href="https://www.artstation.com/mandaljay10 " target="_blank" title="ArtStation"><i class="fab fa-artstation"></i></a>
-    <a href="https://www.linkedin.com/in/jay-mandal-a6ab981b8/ " target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.artstation.com/yourprofile " target="_blank" title="ArtStation"><i class="fab fa-artstation"></i></a>
+    <a href="https://www.instagram.com/yourprofile " target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/yourprofile " target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://sketchfab.com/yourprofile " target="_blank" title="Sketchfab"><i class="fab fa-sketchfab"></i></a>
   </div>
-  
-  <script src="scripts.js"></script>
-  
-    <script>
-  window.addEventListener('scroll', function () {
-    const floating = document.querySelector('.floating-social');
-    if (window.scrollY > 300) {
-      floating.style.opacity = '1';
-      floating.style.pointerEvents = 'auto';
-    } else {
-      floating.style.opacity = '0';
-      floating.style.pointerEvents = 'none';
-    }
-  });
-</script>
+
+  <!-- Load Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js "></script>
 </body>
 </html>
