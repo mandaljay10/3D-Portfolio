@@ -1,14 +1,4 @@
-:root {
-  --bg-color: #121212;
-  --text-color: #f1f1f1;
-  --accent-color: #00ffcc;
-}
-
-body.dark {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -16,63 +6,45 @@ body.dark {
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: sans-serif;
+  background: #f4f4f4;
+  color: #333;
   line-height: 1.6;
-  padding: 20px;
+  padding-bottom: 100px;
 }
 
 header {
+  background: #111;
+  color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 20px;
 }
 
-button#theme-toggle {
-  padding: 10px 15px;
-  background: var(--accent-color);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
-
-.project {
-  background: #1e1e1e;
-  margin: 15px 0;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(255,255,255,0.05);
-}
-
-.project img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 10px;
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #00ffcc;
+  color: #000;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: var(--accent-color);
-  color: #000;
+  background: #000;
+  color: #fff;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
   background: #333;
 }
 
-/* Portfolio */
-.portfolio {
-  padding: 60px 20px;
+.projects {
   max-width: 1000px;
-  margin: auto;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .project-grid {
@@ -81,15 +53,6 @@ button#theme-toggle {
   gap: 20px;
 }
 
-.project-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1 1 calc(50% - 20px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 30px 20px;
@@ -97,7 +60,7 @@ footer {
   color: white;
 }
 
-/* Floating Social Media Icons */
+/* Floating Social Icons */
 .floating-social {
   position: fixed;
   right: 20px;
@@ -105,9 +68,6 @@ footer {
   display: flex;
   flex-direction: column;
   z-index: 1000;
-  opacity: 1;
-  pointer-events: auto;
-  transition: opacity 0.3s ease;
 }
 
 .floating-social a {
@@ -121,7 +81,6 @@ footer {
   line-height: 40px;
   font-size: 18px;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
@@ -129,11 +88,4 @@ footer {
   background-color: #00ffcc;
   color: #000;
   transform: scale(1.1);
-}
-
-/* Hide on small screens */
-@media (max-width: 600px) {
-  .floating-social {
-    display: none;
-  }
 }
